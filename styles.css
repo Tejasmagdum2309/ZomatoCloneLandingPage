@@ -210,6 +210,15 @@
     background-position: center;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
+    transition: width 2s  , hight 2s ;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+.collections_card_container .card:hover{
+    height: 320px;
+    min-width: 260px;
 }
 
 .card1{
@@ -236,12 +245,13 @@
     top: 0;
     left: 0;
     border-radius: 10px;
-    background: linear-gradient(
+    /* transition: all ease-in 250s 500ms; */
+    /* background: linear-gradient(
       
         rgba(225, 0, 0, 1) 0%,
         rgba(225, 0, 2, 1) 50%,
         rgba(225, 0, 0, 1) 85%,
-    );
+    ); */
     z-index: 5;
 }
 
@@ -491,7 +501,7 @@
 }
 
 .disclamer{
-    width: 95%;
+    width: 80%;
     color: gray;
     margin: auto;
     border-top: 1px solid gray;
